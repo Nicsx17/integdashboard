@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: #7351b3;
+}
+
+h1,
+h2.skill-title {
+    color: #4e2599;
+}
+
+body {
+    background: linear-gradient(35deg, #BA38D7, #7332EB, #A200DA);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.dashboard {
+    width: 60%;
+    min-height: 80vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, .5), rgba(255, 255, 255, .2));
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-radius: 1rem;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, .5);
+    z-index: 3;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: .7rem;
+}
+
+.sidebar-item:hover .si-name {
+    color: #A200DA;
+}
+
+.si-name {
+    color: #4e2599;
+    font-weight: 500;
+}
+
+.active {
+    color: #A200DA;
+}
+
+/* main */
+
+.main {
+    padding: 2rem;
+    height: max-content;
+}
+
+.skill {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.skill:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.watering {
+    background-color: rgba(255, 255, 255, .3);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+
+/* circles */
+
+.circle-1 {
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    border-radius: 50%;
+    top: 5%;
+    right: 13%;
+}
+
+.circle-2 {
+    height: 300px;
+    width: 300px;
+    background-color: cyan;
+    position: absolute;
+    border-radius: 50%;
+    bottom: -5%;
+    left: 10%;
+}
+
+.circle-3 {
+    height: 100px;
+    width: 100px;
+    background-color: #35d19d;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 65%;
+    left: 40%;
+}
